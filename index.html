@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Maruti Traders | Electrical & Home Appliances</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    background:#f4f6f8;
+    color:#222;
+    line-height:1.6;
+}
+
+/* HEADER */
+header{
+    background:#0a3d62;
+    color:#fff;
+    padding:15px 30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+/* LOGO */
+/*.logo{
+    display:flex;
+    flex-direction:column;
+    line-height:1.1;
+}
+.logo span:first-child{
+    font-size:22px;
+    font-weight:bold;
+}
+.logo span:last-child{
+    font-size:12px;
+    opacity:0.9;*/
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo img{
+    height:50px;      /* change size if needed */
+    width:auto;
+}
+
+.logo-text{
+    display:flex;
+    flex-direction:column;
+    line-height:1.1;
+}
+
+.logo-text span:first-child{
+    font-size:22px;
+    font-weight:bold;
+}
+
+.logo-text span:last-child{
+    font-size:12px;
+    opacity:0.9;
+}
+
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    margin-left:20px;
+    font-size:15px;
+}
+nav a:hover{
+    text-decoration:underline;
+}
+
+/* HERO */
+.hero{
+    background:#ffffff;
+    padding:80px 20px;
+    text-align:center;
+}
+.hero h2{
+    font-size:36px;
+}
+.hero p{
+    color:#555;
+    margin:15px 0;
+}
+.btn{
+    background:#0a3d62;
+    color:#fff;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:4px;
+}
+
+/* SECTION */
+section{
+    padding:60px 30px;
+    background:#fff;
+    margin:30px;
+    border-radius:6px;
+}
+section h2{
+    margin-bottom:20px;
+    color:#0a3d62;
+}
+
+/* FEATURES */
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+.feature{
+    background:#eef2f3;
+    padding:20px;
+    text-align:center;
+    border-radius:5px;
+}
+
+/* PRODUCTS */
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+}
+.product{
+    background:#f1f3f4;
+    padding:20px;
+    text-align:center;
+    border-radius:6px;
+}
+.product img{
+    width:100%;
+    height:50px;        /* controls image height */
+    object-fit:contain; /* keeps image inside box */
+    margin-bottom:10px;
+}
+
+
+
+
+/* BRANDS */
+.brands{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+    gap:20px;
+    align-items:center;
+    text-align:center;
+}
+.brands img{
+    max-width:50px;
+    filter:grayscale(100%);
+width:50px;
+    height:50px;        /* controls image height */
+    object-fit:contain; /* keeps image inside box */
+    margin-bottom:10px;
+}
+
+/* MAP */
+.map iframe{
+    width:100%;
+    height:350px;
+    border:0;
+    border-radius:6px;
+}
+
+/* FOOTER */
+footer{
+    background:#0a3d62;
+    color:#fff;
+    text-align:center;
+    padding:15px;
+    margin-top:40px;
+}
+@media (max-width:768px){
+  header{
+    flex-direction:column;
+  }
+
+  nav a{
+    margin:10px;
+  }
+
+  .slides img{
+    height:200px;
+  }
+
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+    <img src="images/logo.png" alt="Maruti Traders Logo">
+    <div class="logo-text">
+        <span>Maruti Traders</span>
+        <span>Electrical & Home Appliances</span>
+    </div>
+</div>
+<nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#brands">Brands</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HOME -->
+<div class="hero" id="home">
+    <h2>Your Trusted Home Appliance Store</h2>
+    <p>Quality Products • Honest Pricing • Reliable Service</p>
+    <a href="#products" class="btn">View Products</a>
+</div>
+
+<!-- FEATURES -->
+<section>
+    <div class="features">
+        <div class="feature">✔ Genuine Products</div>
+        <div class="feature">✔ Best Market Prices</div>
+        <div class="feature">✔ After Sales Support</div>
+        <div class="feature">✔ Trusted Local Store</div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>About Us</h2>
+    <p>
+        <strong>Maruti Traders</strong> is a trusted electrical and home appliance store
+        located at Madhuban Township, Golani Naka, Vasai East.
+    </p>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products">
+    <h2>Our Products</h2>
+    <div class="products">
+        <div class="product">
+            <img src="https://cdn-icons-png.flaticon.com/512/3474/3474360.png">
+            <p>Television</p>
+        </div>
+        <div class="product">
+            <img src="https://cdn-icons-png.flaticon.com/512/2933/2933884.png">
+            <p>Air Conditioner</p>
+        </div>
+        <div class="product">
+            <img src="https://cdn-icons-png.flaticon.com/512/1046/1046857.png">
+            <p>Refrigerator</p>
+        </div>
+        <div class="product">
+            <img src="https://cdn-icons-png.flaticon.com/512/2933/2933865.png">
+            <p>Washing Machine</p>
+        </div>
+        <div class="product">
+            <img src="https://cdn-icons-png.flaticon.com/512/3075/3075977.png">
+            <p>Microwave Oven</p>
+        </div>
+        <div class="product">
+            <img src="https://cdn-icons-png.flaticon.com/512/2933/2933894.png">
+            <p>Water Cooler</p>
+        </div>
+        <div class="product">
+            <img src="https://cdn-icons-png.flaticon.com/512/3075/3075971.png">
+            <p>Air Fryer</p>
+        </div>
+    </div>
+</section>
+
+<!-- gallary -->
+<section id="brands">
+    <h2>Brands We Deal In</h2>
+    <div class="shop">
+<img src="images/ac.jpg" alt="ac.stock">
+<img src="images/shop.jpg" alt=stock>
+<img src="images/stock.jpg">
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p><strong>Shankarlal Saraswat:</strong> 7977404039</p>
+    <p><strong>Dhawal Saraswat:</strong> 9867990990</p>
+    <p><strong>Address:</strong><br>
+        MARUTI TRADERS,<br>
+        Madhuban Township, Golani Naka,<br>
+        Vasai East, Maharashtra 401208
+    </p>
+    <a class="btn" href="https://wa.me/917977404039" target="_blank">Chat on WhatsApp</a>
+</section>
+
+<!-- MAP -->
+<section class="map">
+    <h2>Our Location</h2>
+    <iframe src="https://www.google.com/maps?q=Golani+Naka+Vasai+East&output=embed"></iframe>
+</section>
+
+<footer>
+    © 2025 Maruti Traders | All Rights Reserved
+</footer>
+
+</body>
+</html>
